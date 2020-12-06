@@ -1,7 +1,7 @@
 #lang racket
 
-(define all-answers (map (compose (λ (x) (map string->list x))
-                                  (λ (x) (string-split x "\n")))
+(define all-answers (map (compose (curry map string->list)
+                                  (curryr string-split "\n"))
                          (string-split (port->string) "\n\n")))
 
 ;; Part 1:
