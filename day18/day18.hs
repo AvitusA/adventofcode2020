@@ -10,7 +10,7 @@ main = do
   putStrLn (show (sum compute))
 
 compute =
-  [
+  [ -- Find & Replace + -> `p` and * -> `m` and \n -> ,\n from input:
   3 `m` (2 `p` (9 `m` 2 `m` 2 `p` 8) `m` (7 `m` 6 `m` 7 `m` 3) `m` (3 `m` 9 `m` 7) `m` (6 `m` 6)) `m` 9 `m` 8 `p` 6,
   6 `p` 4 `p` 6 `m` 2 `p` 5 `m` (8 `p` 5 `p` 5 `p` (8 `m` 7 `p` 2 `p` 6 `m` 5 `m` 4)),
   9 `p` 3 `p` 5 `p` 3 `m` (5 `p` (8 `p` 7 `m` 8 `m` 8) `m` (5 `p` 9 `p` 9 `m` 9 `m` 4)) `m` (6 `m` (8 `m` 5 `m` 6 `m` 8 `p` 4 `m` 5)),
